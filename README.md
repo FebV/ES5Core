@@ -1,4 +1,10 @@
 # ING-OJ  
+Online Judge for interviewee  
+
+using nodejs/koa2 on server side  
+using react on frontend  
+using react-material on frontend  
+
 ## build
 npm install (install server)  
 cd public  
