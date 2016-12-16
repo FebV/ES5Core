@@ -1,0 +1,15 @@
+{
+  "name": "es5",
+  "version": "0.0.0",
+  "description": "es5 online judge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "FebV",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.0.0-alpha.7",
+    "koa-static": "^2.0.0"
+  }
+}
