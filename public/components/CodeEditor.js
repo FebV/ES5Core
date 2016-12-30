@@ -5,8 +5,12 @@ require('codemirror/mode/javascript/javascript');
 export default class CodeEditor extends React.Component{
     constructor(props) {
         super(props);
+        let code = `function Exam() {\n\n}`;
+        if(this.props.init || this.props.param) {
+            code = this.props.init ? this.props.init : `function Exam(${this.props.param}) {\n\n}`;
+        }
         this.state = {
-            code: this.props.init ? this.props.init : "function() {\n\n}",
+            code
         };
     }
     updateCode(newCode) {

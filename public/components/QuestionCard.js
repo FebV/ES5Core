@@ -32,6 +32,7 @@ export default class QuestionCard extends React.Component {
     }
 
     render() {
+        const style = {fontFamily: 'Microsoft Yahei'};
         let inner = null;
         if(this.props.type == 'choice')
             inner = <RadioButtonGroup name="choice">
@@ -51,19 +52,20 @@ export default class QuestionCard extends React.Component {
         return (
             <MuiThemeProvider>
             <div>
-            <Card style={{padding: '10px'}}>
+            <Card style={{padding: '10px', fontFamily: 'Microsoft Yahei'}}>
                 <CardHeader
                 title={this.props.title}
                 subtitle={this.props.subTitle}  
                 // actAsExpander={true}
                 />
-                <CardText>
+                <CardText style={style}>
                     {this.props.content}
                 </CardText>
                 {inner}
                 <CodeEditor
                     updateCode={this.updateCode.bind(this)}
                     init={this.props.init}
+                    param={this.props.param}
                 />
                 {act}
             </Card>
