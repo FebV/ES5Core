@@ -13,7 +13,7 @@ class App extends React.Component {
         <div>
         <MuiThemeProvider>
             <AppBar 
-              title="Online Judge"
+              title="ES5 Core"
             />
         </MuiThemeProvider>
           <QuestionCard 
